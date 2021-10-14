@@ -1,6 +1,6 @@
-<h2>Rename files to 7-bit ASCII</h2>
+# Rename files to 7-bit ASCII
 
-<h4>[ Usage ]</h4>
+### [ Usage ]
 
 &nbsp; This application renames files and/or folders, which include non-ASCII characters.
 1 Unicode character becomes 5 ACSII characters (%XXXX).
@@ -16,7 +16,7 @@ It shows how many files will be renamed, too.
 If an error will happen, you can check before actual renaming.
 
 
-<h4>[ About "/yes" option ]</h4>
+### [ About "/yes" option ]
 
 &nbsp; If you are lazy to type 'Y' or 'Yes' at every renaming, set an option "/yes".
 When you are annoyed with typing 'y' at every following files, type 'A' or 'All'.
@@ -24,21 +24,21 @@ If you want to skip one filename, but want to continue next, type 'N' or 'No'.
 If you want to abort renaming all following files, type 'Q' or 'Quit'.
 
 
-<h4>[ About "/recurse" option ]</h4>
+### [ About "/recurse" option ]
 
 &nbsp; If you want to rename folders' name in addition to files's name 
 under the current directory, set "/recurse" option.
 It will search each sub-directory recursively, and rename all files and/or folders.
 
 
-<h4>[ About "/space" option ]</h4>
+### [ About "/space" option ]
 
 &nbsp; If you want to erase each space in a filename, you may set an option "/space".
 Then, one " " is replaced to "%0020".
 When there are multiple spaces, "  " is replaced to "%0020%0020".
 
 
-<h4>[ About "/force" option ]</h4>
+### [ About "/force" option ]
 
 &nbsp; Replacing process uses % as a special mark.
 When there is a valid format of %XXXX already in a filename,
@@ -58,7 +58,7 @@ With "/force" option;
 "abc%00250020xyz.txt" -> decode -> "123%0020xyz.txt" (restored ok)
 
 
-<h4>[ About "/locale" option ]</h4>
+### [ About "/locale" option ]
 
 &nbsp; You may want to keep some non-ASCII characters, which are valid in your locale.
 You can set an option "/locale" to exclude valid characters at the Console Code Page.
@@ -68,7 +68,7 @@ A filename of different Code Page will include other invalid characters.
 Set the "/locale" option, only when you use files in a same Code Page always.
 
 
-<h4>[ About "/unicode" option ]</h4>
+### [ About "/unicode" option ]
 
 &nbsp; You may want to see original non-ASCII characters on renaming dialog.
 When a non-ASCII character is invalid at the Console Code Page.
@@ -81,7 +81,7 @@ Most unicode characters are OK on Windows 10.
 But, you need to change Command Prompt's font on Windows 7.
 
 
-<h4>[ How to use ]</h4>
+### [ How to use ]
 
 1) Open Command prompt of Windows OS.
 
