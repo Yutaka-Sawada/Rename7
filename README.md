@@ -44,7 +44,7 @@ When there are multiple spaces, "  " is replaced to "%0020%0020".
 When there is a valid format of %XXXX already in a filename,
 it will fail to restore the original filename.
 
-&nbsp; For example, a filename is "123%0020456.txt".
+&nbsp; For example, a filename is "123%0020456.txt".  
 Without "/force" option;  
 "abc%0020xyz.txt" -> encode -> "abc%0020xyz.txt" (% is ignored)  
 "abc%0020xyz.txt" -> decode -> "abc xyz.txt" (failed to restore)
@@ -71,7 +71,7 @@ Set the "/locale" option, only when you use files in a same Code Page always.
 ### [ About "/unicode" option ]
 
 &nbsp; You may want to see original non-ASCII characters on renaming dialog.
-When a non-ASCII character is invalid at the Console Code Page.
+When a non-ASCII character is invalid at the Console Code Page,
 it's shown as ? mark on Command Prompt normally.
 By using UTF-8 and proper font, you may see such character correctly.
 This option changes output to UTF-8 to show Unicode characters.
