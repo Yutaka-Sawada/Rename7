@@ -68,6 +68,22 @@ A filename of different Code Page will include other invalid characters.
 Set the "/locale" option, only when you use files in a same Code Page always.
 
 
+### [ About "/invalid" option ]
+
+&nbsp; You may want to sanitize invalid filenames on Windows OS.
+You cannot treat such filenames on Windows Explorer normally.
+Then, you can replace them to safe names.
+When you set "/invalid" option, it doesn't rename Unicode characters.
+If you want to replace Unicode characters also,
+you need to run Rename.exe with "/encode" option again.
+
+&nbsp; It will sanitize filenames of below examples;  
+Period at the last character  
+Space at the first or last character  
+Reserved words: CON, PRN, AUX, NUL, COM1..COM9, LPT1..LPT9  
+Reserved words with extension
+
+
 ### [ About "/unicode" option ]
 
 &nbsp; You may want to see original non-ASCII characters on renaming dialog.
