@@ -1,5 +1,19 @@
 # Rename files to 7-bit ASCII
 
+This replaces Unicode to %XXXX in filenames under current directory.
+
+Options:  
+/e or /encode  : rename filenames by replacing Unicode to %XXXX  
+/d or /decode  : restore original filenames with Unicode  
+/y or /yes     : rename automatically  
+/r or /recurse : search sub-directories recursively  
+/s or /space   : substitute each space to %0020  
+/f or /force   : substitute each valid %XXXX to %0025XXXX  
+/l or /locale  : replace only invalid characters at the locale  
+/i or /invalid : replace only invalid filenames on Windows OS  
+/u or /unicode : try to display Unicode characters  
+
+
 ### [ Usage ]
 
 &nbsp; This application renames files and/or folders, which include non-ASCII characters.
