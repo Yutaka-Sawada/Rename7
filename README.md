@@ -10,7 +10,7 @@ Options:
 /s or /space   : substitute each space to %0020  
 /f or /force   : substitute each valid %XXXX to %0025XXXX  
 /l or /locale  : replace only invalid characters at the locale  
-/i or /invalid : replace only invalid filenames on Windows OS  
+/w or /windows : replace only invalid filenames on Windows OS  
 /u or /unicode : try to display Unicode characters  
 
 
@@ -82,12 +82,12 @@ A filename of different Code Page will include other invalid characters.
 Set the "/locale" option, only when you use files in a same Code Page always.
 
 
-### [ About "/invalid" option ]
+### [ About "/windows" option ]
 
-&nbsp; You may want to sanitize invalid filenames on Windows OS.
+&nbsp; You may want to sanitize invalid (or bad) filenames on Windows OS.
 You cannot treat such filenames on Windows Explorer normally.
 Then, you can replace them to safe names.
-When you set "/invalid" option, it doesn't rename Unicode characters.
+When you set "/windows" option, it doesn't rename Unicode characters.
 If you want to replace Unicode characters also,
 you need to run Rename.exe with "/encode" option again.
 
