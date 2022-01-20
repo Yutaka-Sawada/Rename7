@@ -1,4 +1,4 @@
-# Rename files to 7-bit ASCII
+# Rename filenames to 7-bit ASCII
 
 This replaces Unicode to %XXXX in filenames under current directory.
 
