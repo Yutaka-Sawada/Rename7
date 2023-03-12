@@ -916,7 +916,7 @@ int wmain(int argc, wchar_t *argv[])
 	int flag_replace = 0;
 	wchar_t *cur_dir, *tmp_p;
 
-	printf("Rename to 7-bit ASCII by (c) 2022 Yutaka Sawada\n\n");
+	printf("Rename to 7-bit ASCII by (c) 2023 Yutaka Sawada\n\n");
 
 	cur_dir = malloc(2048 * sizeof(wchar_t));	// maybe 2k length is enough.
 	if (cur_dir == NULL){
